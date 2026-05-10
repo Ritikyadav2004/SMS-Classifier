@@ -75,8 +75,8 @@ st.markdown("""
 
 # --- Load Model and Vectorizer (No changes here) ---
 try:
-    model = pickle.load(open("E:/ToBeArrenged/Ml Project/Sms_detecter/Indian_Spam_Model.pkl", "rb"))
-    vectorizer = pickle.load(open("E:/ToBeArrenged/Ml Project/Sms_detecter/vectorizer.pkl", "rb"))
+    model = pickle.load(open("Indian_Spam_Model.pkl", "rb"))
+    vectorizer = pickle.load(open("vectorizer.pkl", "rb"))
 except FileNotFoundError:
     st.error("Model or vectorizer file not found. Please check the file paths.")
     st.stop()

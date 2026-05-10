@@ -185,8 +185,8 @@ h1 {
 def load_models():
     """Loads the pre-trained model and vectorizer from pickle files."""
     try:
-        model = pickle.load(open("D:/Ml Project/Sms_detecter/Indian_Spam_Model.pkl", "rb"))
-        vectorizer = pickle.load(open("D:/Ml Project/Sms_detecter/vectorizer.pkl", "rb"))
+        model = pickle.load(open("Indian_Spam_Model.pkl", "rb"))
+        vectorizer = pickle.load(open("vectorizer.pkl", "rb"))
         return model, vectorizer
     except FileNotFoundError:
         st.error("🚨 Model files not found! Please check the file paths.")
