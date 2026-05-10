@@ -1,6 +1,7 @@
 import streamlit as st
 import pickle
 import time
+import sklearn
 import pandas as pd
 from datetime import datetime
 
